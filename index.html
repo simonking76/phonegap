@@ -14,15 +14,14 @@
             document.addEventListener("deviceready", onDeviceReady, false);
         }
 
-				var gaPlugin;
-				
         function onDeviceReady()
         {
             // do your thing!
             navigator.notification.alert("PhoneGap is working");
+						var gaPlugin;
 						gaPlugin = window.plugins.gaPlugin;
 						gaPlugin.init(successHandler, errorHandler, "UA-20914687-2", 10);
-						gaPlugin.trackPage( nativePluginResultHandler, nativePluginErrorHandler, "phonegap.kingsgarden.co.uk");
+						gaPlugin.trackPage( nativePluginResultHandler, nativePluginErrorHandler, "phonegap.kingsgarden.co.uk/index.html");
 						//gaPlugin.exit(nativePluginResultHandler, nativePluginErrorHandler);
         }
 
