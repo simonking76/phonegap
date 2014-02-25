@@ -34,8 +34,9 @@
 				console.log('nativePluginErrorHandler: '+error);
 			}
 			
-			gaPlugin.trackPage( nativePluginResultHandler, nativePluginErrorHandler, "ga.html");
-			
+			function PageButtonClicked(){
+				gaPlugin.trackPage( nativePluginResultHandler, nativePluginErrorHandler, "ga.html");
+			}
 			
 			function TrackButtonClicked() {
 				gaPlugin.trackEvent( nativePluginResultHandler, nativePluginErrorHandler, "Button", "Click", "event only", 1);
