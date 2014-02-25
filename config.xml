@@ -4,8 +4,6 @@
     id        = "com.phonegap.example"
     version   = "1.0.0">
 
-<gap:plugin name="com.adobe.plugins.gaplugin">
-
 <name>PhoneGap Build Application</name>
 <description>
 A simple PhoneGap Build application.
@@ -14,5 +12,5 @@ A simple PhoneGap Build application.
 <author href="http://www.kingsgarden.co.uk" email="simon@kingsgarden.co.uk">
 Simon King
 </author>
-
+<gap:plugin name="com.adobe.plugins.gaplugin">
 </widget>
