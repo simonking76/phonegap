@@ -8,27 +8,20 @@
 
         <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
         <script type="text/javascript">
+				var gaPlugin;
 
         function onBodyLoad()
         {       
-            document.addEventListener("deviceready", onDeviceReady, false);
-        }
-
-        function onDeviceReady()
-        {
-            // do your thing!
-            navigator.notification.alert("PhoneGap is working");
+            document.addEventListener("deviceready", onDeviceReady, true);
         }
 				
-				var gaPlugin;
 				function onDeviceReady() {
 						gaPlugin = window.plugins.gaPlugin;
 						gaPlugin.init(successHandler, errorHandler, "UA-20914687-2", 10);
 				}
 				
 				gaPlugin.trackPage( nativePluginResultHandler, nativePluginErrorHandler, "phonegap.kingsgarden.co.uk/index.html");
-				//gaPlugin.exit(nativePluginResultHandler, nativePluginErrorHandler);
-
+				
         </script>
     </head>
     <body onload="onBodyLoad()">
