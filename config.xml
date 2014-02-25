@@ -13,6 +13,6 @@ A simple PhoneGap Build application.
 Simon King
 </author>
 
-<gap:plugin name="com.adobe.plugins.gaplugin">
+<gap:plugin name="com.adobe.plugins.gaplugin" />
 
 </widget>
