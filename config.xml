@@ -4,8 +4,9 @@
     id        = "com.phonegap.example"
     version   = "1.0.0">
 
+<gap:plugin name="com.adobe.plugins.gaplugin">
+
 <name>PhoneGap Build Application</name>
-<gap:plugin name="com.adobe.plugins.gaplugin" />
 <description>
 A simple PhoneGap Build application.
 </description>
