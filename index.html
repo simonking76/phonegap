@@ -27,12 +27,17 @@
 				function errorHandler() {
 					alert("something went wrong");
 				}
+				function nativePluginResultHandler(){
+					alert("nativePluginResultHandler");
+				}
+
+				alert("fook");
 				
         </script>
     </head>
     <body onload="onBodyLoad()">
     <h1>GOOGLE ANALYTICS</h1>
-		<a href="#" onClick="gaPlugin.trackEvent( nativePluginResultHandler, nativePluginErrorHandler, "Button", "Click", "event only", 1);">click me</a>
+		<a href="#" onClick="gaPlugin.trackEvent(nativePluginResultHandler, nativePluginErrorHandler, "Button", "Click", "event only", 1);">click me</a>
 		<a href="ga.html">GOOGLE ANALYTICS</a>
     </body>
 </html>
