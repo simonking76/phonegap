@@ -4,9 +4,9 @@
     id        = "com.phonegap.example"
     version   = "1.0.0">
 
-<name>PhoneGap Build Application</name>
+<name>KingsGarden Plugin Tests</name>
 <description>
-A simple PhoneGap Build application.
+A project to explore the capabilities for phonegap build plugins.
 </description>
 
 <author href="http://www.kingsgarden.co.uk" email="simon@kingsgarden.co.uk">
