@@ -5,6 +5,7 @@
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <title>PhoneGap</title>
 		<link rel="stylesheet" href="master.css" type="text/css" media="screen" title="no title">
+
     <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
 		<script type="text/javascript">
 			var gaPlugin;
@@ -52,7 +53,7 @@
 			}
         
 			function PageButtonClicked() {
-				gaPlugin.trackPage( nativePluginResultHandler, nativePluginErrorHandler, "kingsgarden.co.uk/ga.html");
+				gaPlugin.trackPage( nativePluginResultHandler, nativePluginErrorHandler, "some.url.com");
 			}
 			
 			function goingAway() {
@@ -68,8 +69,9 @@
     <div>
     	<a href="#" class="btn large" onclick="TrackButtonClicked();">Track Event</a>
     	<a href="#" class="btn large" onclick="VariableButtonClicked();">Track Event with Variable</a>
-    	<a href="#" class="btn large" onclick="PageButtonClicked();">Track Page no</a>
+    	<a href="#" class="btn large" onclick="PageButtonClicked();">Track Page</a>
     </div>
   </body>
 </html>
+
 
