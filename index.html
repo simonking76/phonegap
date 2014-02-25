@@ -20,7 +20,12 @@
 						gaPlugin.init(successHandler, errorHandler, "UA-20914687-2", 10);
 				}
 				
-				gaPlugin.trackPage( nativePluginResultHandler, nativePluginErrorHandler, "phonegap.kingsgarden.co.uk/index.html");
+				function successHandler() {
+					gaPlugin.trackPage( nativePluginResultHandler, nativePluginErrorHandler, "phonegap.kingsgarden.co.uk/index.html");
+				}
+				function errorHandler() {
+					alert("something went wrong");
+				}
 				
         </script>
     </head>
